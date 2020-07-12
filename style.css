@@ -1,0 +1,338 @@
+p,
+h2 {
+    font-family: 'Roboto', sans-serif;
+}
+
+.headerbg {
+    position: absolute;
+    z-index: -10;
+    background-size: cover;
+}
+
+.headertext {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.sm-title {
+    font-size: 3.5em;
+}
+
+.slash {
+    font-size: 1.3em;
+}
+
+.header {
+    padding-top: 5em;
+}
+
+.logo {
+    padding-top: 10px;
+}
+
+.maincontainer {
+    width: 75%;
+    max-width: 75em;
+    -webkit-box-shadow: 0px 0px 15px 0px rgba(207, 207, 207, 1);
+    -moz-box-shadow: 0px 0px 15px 0px rgba(207, 207, 207, 1);
+    box-shadow: 0px 0px 15px 0px rgba(207, 207, 207, 1);
+    background-color: #ffffff;
+}
+
+.pendantlesvacancesdiv {
+    margin-left: 3.6em;
+}
+
+.row1margintop {
+    height: 480px;
+    padding-top: 9.5em;
+}
+
+.pausedetentedesc {
+    font-size: 1.2em;
+}
+
+.title {
+    text-transform: uppercase;
+    font-size: 3em;
+    font-weight: 700;
+    line-height: 1em;
+}
+
+.bluetext {
+    color: #11a8d9;
+}
+
+.winnertext {
+    font-size: 1.2em;
+}
+
+
+.winnerdiv {
+    background-color: #262626;
+    color: #ffffff
+}
+
+.otherwinnerdiv {
+    background-color: #11a8d9;
+    color: #ffffff;
+}
+
+.ordinal {
+    vertical-align: super;
+    font-size: 0.7em
+}
+
+.number {
+    font-size: 2em;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.middle-of-line {
+    vertical-align: super;
+    font-size: 2em;
+}
+
+.formtitle {
+    font-size: 2.5em;
+    text-transform: uppercase;
+    font-weight: 800;
+}
+
+
+
+.btn {
+    border-radius: 0;
+    background-color: #1fa7da;
+    width: 9em;
+}
+
+.form-control {
+    height: 4em;
+    background-color: #f4f6fc;
+    border: 0;
+}
+
+.no-resize {
+    resize: none;
+}
+
+#mailbody {
+    height: 15em;
+}
+
+/* Start of custom checkbox*/
+
+.control {
+    font-family: arial;
+    display: block;
+    position: relative;
+    padding-left: 30px;
+    margin-bottom: 5px;
+    padding-top: 1px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.control input {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+}
+
+.control_indicator {
+    position: absolute;
+    top: 2px;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    background: #ffffff;
+    border: 3px solid #eeeeee;
+    border-radius: 0px;
+}
+
+.control:hover input ~ .control_indicator,
+.control input:focus ~ .control_indicator {
+    background: #f5f5f5;
+}
+
+.control input:checked ~ .control_indicator {
+    background: #ffffff;
+}
+
+.control:hover input:not([disabled]):checked ~ .control_indicator,
+.control input:checked:focus ~ .control_indicator {
+    background: #f5f5f5;
+}
+
+.control input:disabled ~ .control_indicator {
+    background: #e6e6e6;
+    opacity: 0.6;
+    pointer-events: none;
+}
+
+.control_indicator:after {
+    box-sizing: unset;
+    content: '';
+    position: absolute;
+    display: none;
+}
+
+.control input:checked ~ .control_indicator:after {
+    display: block;
+}
+
+.control-checkbox .control_indicator:after {
+    left: 5px;
+    top: 2px;
+    width: 4px;
+    height: 8px;
+    border: solid #3b3b3b;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+}
+
+.control-checkbox input:disabled ~ .control_indicator:after {
+    border-color: #7b7b7b;
+}
+
+input.form-check-input[type="checkbox"] {
+    -webkit-appearance: none;
+    padding: 7px;
+    border: 2px solid #eeeeee;
+    background-color: white;
+    position: relative;
+}
+
+/*End of custom checkbox*/
+
+input {
+    background-color: #f4f6fc;
+}
+
+.form-control::placeholder {
+    padding-left: 1em;
+    color: black;
+    font-weight: 500;
+    padding-top: 1em;
+}
+
+.container {
+    width: 75em;
+}
+
+.jeubg {
+    background-image: url(ressources/bckgd_jeu.png);
+}
+
+.orangetexte {
+    font-weight: 300;
+    font-size: 0.9em;
+    color: #ed6a4c;
+}
+
+.footertitle {
+    font-size: 0.9em;
+    font-weight: bold;
+}
+
+.footertext {
+    font-size: 0.8em;
+    color: #acacab;
+}
+
+.contacttext {
+    font-size: 0.9em;
+}
+
+.footerbg {
+    z-index: -10;
+    width: 100%;
+    background-image: url(ressources/bckgd_footer.png);
+    background-size: contain;
+    min-height: 98px;
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
+
+a:hover {
+    color: black;
+    text-decoration: none;
+}
+
+/*MEDIA QUERIES*/
+
+@media (max-width:1400px) {
+    .maincontainer {
+        width: 100%;
+    }
+    
+}
+
+@media (min-width:991px) {
+    
+    .lg-d-flex-between {
+        display: flex;
+        justify-content: space-between;
+    }
+    
+}
+
+
+@media (max-width:991px) {
+    
+    .logo {
+        display: none;
+    }
+    
+    .headerbg {
+        display: none;
+    }
+    
+    .ananasimgcontainer {
+        width: 0%;
+    }
+    
+    .ananasimg {
+        display: none;
+        width: 0%;
+    }
+    
+    .footerbg {
+        background-image: url();
+        max-height: 20px;
+    }
+    
+    .winnertext {
+        font-size: 1.7em;
+    }
+    
+}
+
+
+@media (max-width:730px) {
+    
+    .winnertext {
+        font-size: 1.2em;
+    }
+    
+}
+
+@media (max-width: 576px) {
+    
+    .ananasimgcontainer {
+        display: none;
+    }
+    
+    .avantlesvacancescol {
+        display: none;
+    }
+    
+    .header {
+        width: 100%;
+    }
+    
+}
+.messageform {
+    display: none;
+    justify-content: center;
+}
